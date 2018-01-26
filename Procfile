@@ -1,1 +1,1 @@
-web: sh target
+web: target/*.war
