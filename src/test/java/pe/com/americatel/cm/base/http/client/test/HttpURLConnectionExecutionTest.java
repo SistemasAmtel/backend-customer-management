@@ -20,6 +20,9 @@ public class HttpURLConnectionExecutionTest {
 		String requestPayload = "{\"apiRequest\": {\"resourceName\": \"customerByAccountManager\",\"apiRequestPayload\": {\"documentType\": \"RUC\",\"documentNumber\": \"20101266819\"}}}";
 		Map<String, Object> httpHeaders = new HashMap<String, Object>();
 		httpHeaders.put("Content-Type", "application/json");
+		
+		logger.info("httpHeaders : " + httpHeaders);
+		
 		Map<String, Object> consumeClientResult = HttpURLConnectionExecution.clientRest(httpMethod, httpHeaders, urlEndpoint,
 				requestPayload);
 
