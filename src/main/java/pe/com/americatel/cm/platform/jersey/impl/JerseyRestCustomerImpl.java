@@ -34,7 +34,9 @@ public class JerseyRestCustomerImpl implements JerseyRestCustomer {
 		Response response = null;
 
 		String httpMethod = "POST";
-		String urlEndpoint = "http://190.187.252.105/backend-sig-app/api/endpoint/customer/resources/post/customerByAccountManager";
+		//String urlEndpoint = "http://190.187.252.105/backend-sig-app/api/endpoint/customer/resources/post/customerByAccountManager";
+		String urlEndpoint = "http://190.187.252.105/backend-sig-app/api/endpoint/customer/resources/post/customerByAccountManager;
+					
 		Map<String, Object> httpHeaders = new HashMap<String, Object>();
 		httpHeaders.put("Content-Type", "application/json");
 
